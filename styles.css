@@ -1,8 +1,9 @@
 :root{
     --main-radius:10px;
+    --main-weight:900;
   }
 body{
-    /* background-color:hsl(225, 100%, 94%); */
+    background-color:hsl(225, 100%, 94%);
     font-family: 'Red Hat Display', sans-serif;
     font-size:16px;
     background-image: url("images/pattern-background-desktop.svg");
@@ -13,10 +14,12 @@ body{
     justify-content: center;
 }
 .container{
-    margin-top: 14vh;
+    margin: 10vh 0;
     width:450px;
     border-radius: var(--main-radius);
     background-color:hsl(225, 100%, 98%);
+    display:flex;
+    flex-direction: column;
 }
 #poster{
     border-radius:10px 10px 0 0;
@@ -27,18 +30,17 @@ body{
     align-items:stretch;
     justify-content:space-between;
     padding:1.7rem;
-    height:42vh;
 }
 h1{
-    margin:10px;
-    font-weight: 900;
+    margin:0.8rem;
+    font-weight: var(--main-weight);
     text-align:center;
     font-size:1.8rem;
     color:hsl(223, 47%, 23%);
 }
 #main{
     text-align:center;
-    margin: 5px 20px;
+    margin: 0.5rem 1.1rem;
     line-height:1.6rem;
     color:hsl(224, 23%, 55%);
 }
@@ -49,7 +51,7 @@ h1{
     display:flex;
     justify-content: space-around;
     align-items:center;
-    padding:22px 20px;
+    padding:1.4rem 1.4rem;
 }
 #price img{
     height:50px;
@@ -59,21 +61,21 @@ h1{
     text-align: start;
 }
 #price h5{
-    margin:0 0 5px 0;
-    font-weight: 900;
+    margin:0 0 0.5rem 0;
+    font-weight: var(--main-weight);
     font-size:1rem;
     color:hsl(223, 47%, 23%);
 }
 #price p{
     color:hsl(224, 23%, 55%);
-    font-size:0.9rem;
+    font-size:1rem;
     margin:0;
 }
 #price a{
     font-weight: 700;
     font-size:0.8rem;
     color:hsl(245, 75%, 52%);
-    margin:0 0 0 60px;
+    margin:0 0 0 4rem;
     text-decoration:none;
 }
 #price a:hover{
@@ -92,13 +94,13 @@ h1{
 }
 #first a{
     text-decoration:none;
-    font-weight:900;
+    font-weight: var(--main-weight);
     font-size:0.9rem;
     color:hsl(225, 100%, 98%);
 }
 #second{
     text-decoration:none;
-    font-weight:900;
+    font-weight: var(--main-weight);
     font-size:0.9rem;
     color:hsl(224, 23%, 55%);
     padding: 1rem;
@@ -108,3 +110,20 @@ h1{
     color:hsl(223, 47%, 23%);
 }
 
+@media screen and (max-width:600px){
+    body{
+        font-size:14px;
+    }
+    .container{
+        width:87vw;
+    }
+    h1{
+        font-size:1.5rem;
+    }
+    #price h5, #price p{
+        font-size:0.9rem;
+    }
+    #price a{
+        margin:0 0 0 1.8rem;
+    }
+}
