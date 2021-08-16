@@ -1,0 +1,110 @@
+:root{
+    --main-radius:10px;
+  }
+body{
+    /* background-color:hsl(225, 100%, 94%); */
+    font-family: 'Red Hat Display', sans-serif;
+    font-size:16px;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+}
+.container{
+    margin-top: 14vh;
+    width:450px;
+    border-radius: var(--main-radius);
+    background-color:hsl(225, 100%, 98%);
+}
+#poster{
+    border-radius:10px 10px 0 0;
+}
+.card{
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    justify-content:space-between;
+    padding:1.7rem;
+    height:42vh;
+}
+h1{
+    margin:10px;
+    font-weight: 900;
+    text-align:center;
+    font-size:1.8rem;
+    color:hsl(223, 47%, 23%);
+}
+#main{
+    text-align:center;
+    margin: 5px 20px;
+    line-height:1.6rem;
+    color:hsl(224, 23%, 55%);
+}
+#price{
+    background-color:hsl(225, 100%, 96%);
+    border-radius: var(--main-radius);
+    margin: 2rem 0;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    padding:22px 20px;
+}
+#price img{
+    height:50px;
+    margin:0;
+}
+.text{
+    text-align: start;
+}
+#price h5{
+    margin:0 0 5px 0;
+    font-weight: 900;
+    font-size:1rem;
+    color:hsl(223, 47%, 23%);
+}
+#price p{
+    color:hsl(224, 23%, 55%);
+    font-size:0.9rem;
+    margin:0;
+}
+#price a{
+    font-weight: 700;
+    font-size:0.8rem;
+    color:hsl(245, 75%, 52%);
+    margin:0 0 0 60px;
+    text-decoration:none;
+}
+#price a:hover{
+    text-decoration:underline;
+}
+#first{
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0px 20px 15px hsl(245, 75%, 90%);
+    cursor: pointer;
+    padding: 1rem;
+    border:none;
+    border-radius: var(--main-radius);
+}
+#first:hover{
+    background-color: hsl(245, 75%, 75%);
+}
+#first a{
+    text-decoration:none;
+    font-weight:900;
+    font-size:0.9rem;
+    color:hsl(225, 100%, 98%);
+}
+#second{
+    text-decoration:none;
+    font-weight:900;
+    font-size:0.9rem;
+    color:hsl(224, 23%, 55%);
+    padding: 1rem;
+    text-align:center;
+}
+#second:hover{
+    color:hsl(223, 47%, 23%);
+}
+
