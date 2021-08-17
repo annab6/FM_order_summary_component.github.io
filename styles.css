@@ -12,9 +12,10 @@ body{
     background-size: cover;
     display:flex;
     justify-content: center;
+    min-height: 100vh;
+    align-items:center;
 }
 .container{
-    margin: 10vh 0;
     width:450px;
     border-radius: var(--main-radius);
     background-color:hsl(225, 100%, 98%);
